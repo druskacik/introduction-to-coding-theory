@@ -3,6 +3,7 @@ from data.morse_codes import morse_codes
 
 def space_probability():
   avg_lenght = average([len(code) for code in morse_codes])
+  print('Average length of code is ' + str(avg_lenght))
   return 1/(1 + avg_lenght)
 
 def source_with_space():
